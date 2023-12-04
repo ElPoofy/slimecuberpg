@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Slime Cube RPG</title>
+</head>
+<body>
+    <!-- Title Screen Container -->
+    <div class="title-screen">
+        <h1 class="game-title">Slime Cube RPG</h1>
+        <div class="options">
+            <button class="new-game-btn" onclick="startNewGame()">New Game</button>
+            <button class="exit-btn" onclick="exitGame()">Exit</button>
+        </div>
+    </div>
+
+    <!-- Game Screen Container -->
+    <div class="game-screen" style="display:none;">
+        <!-- Player (Green Cube) -->
+        <div class="player"></div>
+    </div>
+
+    <!-- Stats Screen Container -->
+    <div class="stats-screen" style="display:none;">
+        <h2>Stats</h2>
+        <div class="stats">
+            <p>Health: <span id="health">100</span></p>
+            <p>Attack: <span id="attack">10</span></p>
+        </div>
+        <button class="close-stats-btn" onclick="closeStats()">Close</button>
+    </div>
+
+    <!-- Stats Button -->
+    <button class="stats-btn" onclick="openStats()" style="display:none;">Stats</button>
+
+    <!-- Colored Slime Elements -->
+    <div class="slime slime-blue" data-health="80" data-attack="5" style="display:none;"></div>
+    <div class="slime slime-orange" data-health="100" data-attack="12" style="display:none;"></div>
+    <div class="slime slime-white" data-health="120" data-attack="20" style="display:none;"></div>
+    <div class="slime slime-black" data-health="200" data-attack="15" style="display:none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

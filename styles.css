@@ -1,0 +1,134 @@
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light Gray Background */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full Viewport Height */
+}
+
+/* Title Screen Styles */
+.title-screen {
+    text-align: center;
+}
+
+/* Game Title Styles */
+.game-title {
+    color: #4CAF50; /* Green */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Options Container Styles */
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button Styles */
+.new-game-btn,
+.exit-btn {
+    padding: 10px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button Hover Styles */
+.new-game-btn:hover,
+.exit-btn:hover {
+    background-color: #45a049; /* Darker Green on Hover */
+}
+
+/* Game Screen Styles */
+.game-screen {
+    display: none;
+    background-color: #f0f0f0; /* Light Gray Background */
+    height: 100vh;
+}
+
+/* Player Styles */
+.player {
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50; /* Green */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Stats Screen Styles */
+.stats-screen {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    min-width: 150px;
+}
+
+.stats-screen h2 {
+    margin-bottom: 5px;
+}
+
+.stats p {
+    margin: 5px 0;
+    white-space: nowrap; /* Prevent line breaks within stats */
+}
+
+/* Close Stats Button Styles */
+.close-stats-btn {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+}
+
+/* Stats Button Styles */
+.stats-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4CAF50; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Slime Styles - kept pretty simple */
+.slime {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: transparent; /* Set to transparent initially */
+    z-index: 1; /* Ensure slimes are rendered above the background */
+}
+
+.slime-blue {
+    background-color: #4169E1;
+}
+
+.slime-orange {
+    background-color: #FFA500; 
+}
+
+.slime-white {
+    background-color: #FFFFFF;
+}
+
+.slime-black {
+    background-color: #000000;
+}
